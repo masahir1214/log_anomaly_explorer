@@ -1,0 +1,21 @@
+﻿:root {
+  --bg: #0d1117; --panel: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-muted: #8b949e; --accent: #58a6ff;
+  --critical: #f85149; --high: #d29922; --medium: #d2a8ff; --low: #3fb950;
+}
+body { margin: 0; font-family: system-ui, sans-serif; background-color: var(--bg); color: var(--text); }
+.app-container { padding: 20px; max-width: 1400px; margin: 0 auto; }
+.header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.grid { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; }
+.btn { background: var(--accent); color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+.btn:hover { opacity: 0.9; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-demo { background: var(--medium); color: #000; }
+.badge { padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; }
+.badge.CRITICAL { background: var(--critical); color: #fff; }
+.badge.HIGH { background: var(--high); color: #000; }
+.badge.MEDIUM { background: var(--medium); color: #000; }
+.badge.LOW { background: var(--low); color: #000; }
+.xyflow { background-color: var(--bg); }
+.rca-box { background: rgba(88, 166, 255, 0.1); border-left: 4px solid var(--accent); padding: 12px; margin-top: 16px; }

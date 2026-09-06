@@ -1,0 +1,7 @@
+﻿{"timestamp": "2026-09-04T15:00:01Z", "service": "auth-gateway", "severity": "INFO", "message": "User login attempt", "trace_id": "req-101"}
+{"timestamp": "2026-09-04T15:00:02Z", "service": "auth-gateway", "severity": "INFO", "message": "User authenticated", "trace_id": "req-101"}
+{"timestamp": "2026-09-04T15:00:05Z", "service": "payment-api", "severity": "ERROR", "message": "Database connection timeout", "trace_id": "req-102"}
+{"timestamp": "2026-09-04T15:00:06Z", "service": "inventory-db", "severity": "CRITICAL", "message": "Deadlock detected in transaction", "trace_id": "req-102"}
+{"timestamp": "2026-09-04T15:00:07Z", "service": "payment-api", "severity": "FATAL", "message": "Payment processing failed completely", "trace_id": "req-102"}
+{"timestamp": "2026-09-04T15:00:10Z", "service": "notification-worker", "severity": "WARN", "message": "Message queue backing up", "trace_id": "req-103"}
+{"timestamp": "2026-09-04T15:00:15Z", "service": "auth-gateway", "severity": "ERROR", "message": "Latency spike detected connecting to backend", "trace_id": "req-104"}
