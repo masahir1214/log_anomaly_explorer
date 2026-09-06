@@ -1,4 +1,5 @@
-﻿from fastapi import FastAPI, UploadFile, File, Depends, HTTPException
+from a2wsgi import ASGIMiddleware
+from fastapi import FastAPI, UploadFile, File, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from datetime import datetime
@@ -7,6 +8,9 @@ import os
 from app.models import get_db, Incident
 from app.ml_engine import process_logs_pipeline
 from app.llm_engine import generate_real_rca
+
+# Ye line PythonAnywhere ke WSGI server ke liye ek bridge banayegi
+wsgi_app = ASGIMiddleware(app)
 
 try:
     from dotenv import load_dotenv
