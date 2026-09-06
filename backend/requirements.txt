@@ -7,3 +7,4 @@ networkx
 httpx
 python-dotenv
 python-multipart
+a2wsgi
