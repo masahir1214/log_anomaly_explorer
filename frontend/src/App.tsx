@@ -2,7 +2,7 @@
 import { ReactFlow, Controls, Background } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export default function App() {
   const [incidents, setIncidents] = useState<any[]>([]);
